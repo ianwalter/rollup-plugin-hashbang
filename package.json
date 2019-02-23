@@ -1,0 +1,39 @@
+{
+  "name": "@ianwalter/rollup-plugin-hashbang",
+  "description": "Preserve the entry file hashbang/shebang when bundling with Rollup",
+  "version": "0.0.0",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "dist/rollup-plugin-hashbang.js",
+  "module": "dist/rollup-plugin-hashbang.m.js",
+  "scripts": {
+    "lint": "eslint index.js test",
+    "pretest": "dist",
+    "test": "ava"
+  },
+  "dependencies": {
+    "magic-string": "^0.25.2"
+  },
+  "devDependencies": {
+    "@ianwalter/dist": "^2.1.0",
+    "ava": "^1.2.1",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "np": "^4.0.2",
+    "rollup": "^1.2.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "eslint:recommended",
+      "standard"
+    ],
+    "rules": {
+      "no-console": 0
+    }
+  }
+}
