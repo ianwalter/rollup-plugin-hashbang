@@ -9,3 +9,10 @@ test('hashbang is preserved', async t => {
   const { output } = await bundler.generate({ format: 'cjs' })
   t.snapshot(output[0].code)
 })
+
+test('no hashbang, no problem', async t => {
+  const input = join(__dirname, 'fixtures/mod.js')
+  const bundler = await rollup({ input, plugins: [hashbang()] })
+  const { output } = await bundler.generate({ format: 'cjs' })
+  t.snapshot(output[0].code)
+})

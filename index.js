@@ -17,7 +17,7 @@ export default function hashbangPlugin () {
       return null
     },
     renderChunk (code, { isEntry }) {
-      if (isEntry) {
+      if (isEntry && hashbang) {
         const str = new MagicString(code)
         str.prepend(hashbang + '\n')
         return { code: str.toString(), map: str.generateMap({ hires: true }) }
