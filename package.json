@@ -30,7 +30,7 @@
     "magic-string": "^0.25.2"
   },
   "devDependencies": {
-    "@ianwalter/dist": "^2.1.0",
+    "@ianwalter/dist": "^3.0.0",
     "@ianwalter/subpub": "^1.0.1",
     "ava": "^1.2.1",
     "eslint": "^5.14.1",

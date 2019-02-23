@@ -332,14 +332,15 @@
   dependencies:
     arrify "^1.0.1"
 
-"@ianwalter/dist@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-2.1.0.tgz#9e5ff734769f0ccbc6387df5e2207d4836290eb2"
-  integrity sha512-p3n3DWtoDeLFLJg5AN0EiCzkKWsj762lA33sXcCFJw+57R6E+MFkm3nHXelGPwCnTfcXLoj8MNDnVgX2I0u1mg==
+"@ianwalter/dist@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/dist/-/dist-3.0.0.tgz#8bab97d635c334e2960bf734b4cc8da3fc740c19"
+  integrity sha512-lGYooB3kCOxZwI13AMRSzqdohXcPlzKIVBh1dgbOhZOu/3pbjqpCUurmxq9MegYQ0zvPuxAKqD9nfFeRzlMITA==
   dependencies:
     "@babel/core" "^7.3.3"
     "@ianwalter/npm-short-name" "^1.0.0"
     "@ianwalter/promise-complete" "^3.0.1"
+    "@ianwalter/rollup-plugin-hashbang" "^1.0.1"
     builtin-modules "^3.0.0"
     chalk "^2.4.2"
     meow "^5.0.0"
@@ -350,7 +351,7 @@
     rollup-plugin-babel "^4.3.2"
     rollup-plugin-commonjs "^9.2.0"
     rollup-plugin-json "^3.1.0"
-    rollup-plugin-node-resolve "^4.0.0"
+    rollup-plugin-node-resolve "^4.0.1"
 
 "@ianwalter/npm-short-name@^1.0.0":
   version "1.0.0"
@@ -365,6 +366,13 @@
   integrity sha512-zWviJp82MB0spJ7FUrpzcIkvZnz/izhayBLsHv/0sFYsHvI92X7r2y9/zBhkKgG3WDzPE5+qJ86zXgRGc5tDzQ==
   dependencies:
     "@babel/runtime" "^7.2.0"
+
+"@ianwalter/rollup-plugin-hashbang@^1.0.1":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/rollup-plugin-hashbang/-/rollup-plugin-hashbang-1.3.0.tgz#635f33179941e3b4b2c8b469547517f87c1c64b2"
+  integrity sha512-zjQfzDcz7XR9fEDb6fBg+N6vvosQANit4oMwX7CBTu8eFAUVvEuGIAXejQ2JyHmDI4jcgS/PqHuERuSmaKWrNw==
+  dependencies:
+    magic-string "^0.25.2"
 
 "@ianwalter/subpub@^1.0.1":
   version "1.0.1"
@@ -3738,7 +3746,7 @@ rollup-plugin-json@^3.1.0:
   dependencies:
     rollup-pluginutils "^2.3.1"
 
-rollup-plugin-node-resolve@^4.0.0:
+rollup-plugin-node-resolve@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-4.0.1.tgz#f95765d174e5daeef9ea6268566141f53aa9d422"
   integrity sha512-fSS7YDuCe0gYqKsr5OvxMloeZYUSgN43Ypi1WeRZzQcWtHgFayV5tUSPYpxuaioIIWaBXl6NrVk0T2/sKwueLg==
