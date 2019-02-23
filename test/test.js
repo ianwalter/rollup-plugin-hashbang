@@ -16,3 +16,13 @@ test('no hashbang, no problem', async t => {
   const { output } = await bundler.generate({ format: 'cjs' })
   t.snapshot(output[0].code)
 })
+
+test('prepend false', async t => {
+  const input = join(__dirname, 'fixtures/cli.js')
+  const bundler = await rollup({
+    input,
+    plugins: [hashbang({ prepend: false })]
+  })
+  const { output } = await bundler.generate({ format: 'cjs' })
+  t.snapshot(output[0].code)
+})
