@@ -3,6 +3,22 @@
   "description": "Preserve the entry file hashbang/shebang when bundling with Rollup",
   "version": "0.0.0",
   "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianwalter/rollup-plugin-hashbang.git"
+  },
+  "keywords": [
+    "rollup",
+    "hashbang",
+    "shebang",
+    "preserve",
+    "keep"
+  ],
+  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
+  "bugs": {
+    "url": "https://github.com/ianwalter/rollup-plugin-hashbang/issues"
+  },
+  "homepage": "https://github.com/ianwalter/rollup-plugin-hashbang#readme",
   "main": "dist/rollup-plugin-hashbang.js",
   "module": "dist/rollup-plugin-hashbang.m.js",
   "scripts": {
