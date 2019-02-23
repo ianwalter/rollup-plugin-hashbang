@@ -5,6 +5,10 @@
 
 ## Installation
 
+```console
+yarn add @ianwalter/rollup-plugin-hashbang --dev
+```
+
 ## Usage
 
 ## Related
