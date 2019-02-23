@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@ianwalter/dist": "^2.1.0",
+    "@ianwalter/subpub": "^1.0.1",
     "ava": "^1.2.1",
     "eslint": "^5.14.1",
     "eslint-config-standard": "^12.0.0",

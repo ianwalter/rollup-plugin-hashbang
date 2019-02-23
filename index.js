@@ -9,6 +9,12 @@ export default function hashbangPlugin (options = { prepend: true }) {
       let match = hashbangRegex.exec(code)
       if (match) {
         this.meta.hashbang = match[1]
+
+        // Temporary until plugins can pass metadata to each other or output.
+        if (options.subpub) {
+          options.subpub.pub('hashbang', this.meta.hashbang)
+        }
+
         const str = new MagicString(code)
         str.remove(match.index, match[1].length)
         return { code: str.toString(), map: str.generateMap({ hires: true }) }
